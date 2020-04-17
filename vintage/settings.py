@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'accounts',
     'products',
     'cart',
+    'checkout',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +144,6 @@ EMAIL_HOST = 'smtp.gmail.com'
 os.getenv("EMAIL_HOST_USER")
 os.getenv("EMAIL_HOST_PASSWORD")
 EMAIL_PORT = 587
+
+STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
+STRIPE_SECRETKEY = os.getenv('STRIPE_SECRETKEY')
