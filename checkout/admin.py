@@ -1,12 +1,12 @@
 from django.contrib import admin
-from .models import Order, OrderLineitem
+from .models import Order, OrderLineItem
 
-# Register your models here.
 
-class OrderLineAdminInLine(admin.TabularInline):
-    model = OrderLineitem
+class OrderLineAdminInline(admin.TabularInline):
+    model = OrderLineItem
+
 
 class OrderAdmin(admin.ModelAdmin):
-    inlines = (OrderLineAdminInLine, )
+    inlines = (OrderLineAdminInline, )
 
 admin.site.register(Order, OrderAdmin)
