@@ -10,7 +10,10 @@
             <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
             <h3>{{ product.name }}</h3>
             <p class="product-description">{{ product.description }}</p>
+            <h4>Current bids</h4>
             <p>{{ product.price }}</p>
+            <h4>Buyout Price</h4>
+            <p>{{ product.buyout }}</p>
             <form method="POST" action="{% url 'add_to_cart' product.id %}">
                 {% csrf_token %}
                 <div class="input-group">

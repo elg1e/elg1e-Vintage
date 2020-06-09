@@ -8,7 +8,6 @@ import datetime
 
 # Create your models here.
 
-
 class bidding(models.Model):
     product = models.ForeignKey(Product, null=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
