@@ -37,6 +37,9 @@
                         <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Log In</a></li>
                     {% endif %}
                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'products' %}">Artifacts</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{% url 'view_cart' %}">
                             <i class="fa fa-shipping-cart"></i>Cart
                             {% if product_count > 0 %}
@@ -63,15 +66,11 @@
             </div>
         </div>
     {% endif %}
-
         {% block content %} {% endblock %}
-    
     <footer>
         <div class="container">
             <p>Created by Dominic Elgie</p>
         </div>
     </footer>
-    
-    
 </body>
 </html>
