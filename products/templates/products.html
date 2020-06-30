@@ -1,33 +1,26 @@
 {% extends 'base.html' %}
 {% block content %}
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-
-    </div>
-</nav>
-
-<div class="row row-flex">
+<div class="container product-container">
+<div class="row">
     {% for product in products %}
-
     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-md-4 display panel panel-default product-box">
         <div class="panel-body">
-            <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
-            <h3>{{ product.name }}</h3>
-            <p class="product-description">{{ product.description }}</p>
-            <h4>Current bids</h4>
-            <p>{{ product.price }}</p>
-            <h4>Buyout Price</h4>
-            <p>{{ product.buyout }}</p>
+            <div class="product-img" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+                <h3 class="product-name">{{ product.name }}</h3>
+                <p class="product-description">{{ product.description }}</p>
+                <h4 class="product-bidding">Current bids:<span class="product-description">{{ product.price }}</span></h4>
+                <h4 class="product-bidding">Buyout Price:<span class="product-description">{{ product.buyout }}</span></h4>
             <form method="POST" action="{% url 'add_to_cart' product.id %}">
                 {% csrf_token %}
                 <div class="input-group">
                     <span class="input-group-btn"></span>
-                    <button class="btn btn-success" type="submit">Buy It Now</button>
+                    <button class="btn btn-success product-button" type="submit">Buy It Now</button>
                 </div>
             </form>
             {% include 'bids.html' %}
         </div>
     </div>
     {% endfor %}
+</div>
 </div>
 {% endblock %}
