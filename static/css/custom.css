@@ -8,18 +8,25 @@ body {
 
 .logo-nav {
     font-family: 'Alex Brush', cursive;
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 footer {
+    bottom: 0;
+    left: 0;
     padding-top: 20px;
     padding-bottom: 5px;
     border-top: 1px solid #ededed;
     color: #A9A9A9;
 }
 
-.icon-bar {
-    background-color: #fff;
+.social {
+    float: right;
+    padding-right: 15px;
+}
+
+.creator {
+    float: left;
 }
 
 /*index.html*/
@@ -38,14 +45,43 @@ footer {
 }
 
 .intro-text {
-    margin-top: 25%;
+    margin-top: 15%;
     font-size: 16px;
+    font-weight: 900;
+}
+
+.intro-text-2 {
+    display: none;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+@media only screen and (min-width: 992px) {
+    .logo-header {
+        font-size: 4.5rem;
+        margin-top: 10%;
+    }
+    .intro-text {
+        margin-top: 60px;
+        font-size: 18px;
+    }
+    .intro-text-2 {
+        display: inline;
+        font-size: 18px;
+    }
 }
 
 .shading {
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 80vh;
+}
+
+@media only screen and (min-width: 992px) {
+    .shading {
+        height: 100vh;
+        width: 100%;
+    }
 }
 
 .artifact-box-1 {
@@ -60,14 +96,26 @@ footer {
     background-attachment: fixed;
 }
 
+@media only screen and (min-width: 992px) {
+    .artifact-box-1 {
+        height: 100vh;
+        width: 100%;
+        background-size: 100vh;
+    }
+}
+
 .image-head-1 {
     position: absolute;
     top: 25%;
     left: 50%;
     transform: translate( -50%, -50%);
-    font-size: 26px;
+    font-size: 32px;
+    font-weight: 500;
     color: white;
     opacity: 100%;
+    text-align: center;
+    text-shadow: 2px 2px black;
+
 }
 
 .image-text-1 {
@@ -75,9 +123,29 @@ footer {
     top: 75%;
     left: 50%;
     transform: translate( -50%, -50%);
-    font-size: 22px;
+    font-size: 19px;
+    font-weight: 500;
     opacity: 100%;
     color: white;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+@media only screen and (min-width: 992px) {
+    .image-head-1 {
+        font-size: 36px;
+    }
+    .image-text-1 {
+        top: 67%;
+        font-size: 24px;
+    }
+    .image-head-2 {
+        font-size: 36px;
+    }
+    .image-text-2 {
+        top: 67%;
+        font-size: 24px;
+    }
 }
 
 .image-head-2 {
@@ -137,7 +205,7 @@ footer {
 /*products.html*/
 
 .product-container{
-    height: 400px;
+    height: 100vh;
     width: 100%;
 }
 
@@ -154,22 +222,33 @@ footer {
 
 .product-img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     background-size: cover;
+    background-position: center;
 }
 
 .product-name {
-    font-size: 14px;
+    font-size: 24px;
+    padding: 5px;
+
 }
 
 .product-description {
-    font-size: 10px;
+    font-size: 14px;
+    font-weight: 900;
+    padding-top: 10px;
 }
 
 .product-bidding {
-    font-size: 12px;
+    font-size: 18px;
+}
+
+.product-price {
+    font-size: 22px;
+    padding-left: 10px;
 }
 
 .product-button {
+    float: right;
     font-size: 12px;
 }
