@@ -56,32 +56,14 @@ footer {
     font-weight: 900;
 }
 
-@media only screen and (min-width: 992px) {
-    .logo-header {
-        font-size: 4.5rem;
-        margin-top: 10%;
-    }
-    .intro-text {
-        margin-top: 60px;
-        font-size: 18px;
-    }
-    .intro-text-2 {
-        display: inline;
-        font-size: 18px;
-    }
+.hyper-text:hover {
+    font-style: italic;
 }
 
 .shading {
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 80vh;
-}
-
-@media only screen and (min-width: 992px) {
-    .shading {
-        height: 100vh;
-        width: 100%;
-    }
 }
 
 .artifact-box-1 {
@@ -94,78 +76,6 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-}
-
-@media only screen and (min-width: 992px) {
-    .artifact-box-1 {
-        height: 100vh;
-        width: 100%;
-        background-size: 100vh;
-    }
-}
-
-.image-head-1 {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate( -50%, -50%);
-    font-size: 32px;
-    font-weight: 500;
-    color: white;
-    opacity: 100%;
-    text-align: center;
-    text-shadow: 2px 2px black;
-
-}
-
-.image-text-1 {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate( -50%, -50%);
-    font-size: 19px;
-    font-weight: 500;
-    opacity: 100%;
-    color: white;
-    text-align: center;
-    text-shadow: 2px 2px black;
-}
-
-@media only screen and (min-width: 992px) {
-    .image-head-1 {
-        font-size: 36px;
-    }
-    .image-text-1 {
-        top: 67%;
-        font-size: 24px;
-    }
-    .image-head-2 {
-        font-size: 36px;
-    }
-    .image-text-2 {
-        top: 67%;
-        font-size: 24px;
-    }
-}
-
-.image-head-2 {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate( -50%, -50%);
-    font-size: 26px;
-    color: black;
-    opacity: 100%;
-}
-
-.image-text-2 {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate( -50%, -50%);
-    font-size: 22px;
-    opacity: 100%;
-    color: black;
 }
 
 .artifact-box-2 {
@@ -196,10 +106,122 @@ footer {
     background-color: rgb(255, 255, 255);
 }
 
+
+.image-head-1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    opacity: 100%;
+    text-align: center;
+    text-shadow: 2px 2px black;
+
+}
+
+.image-text-1 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    font-size: 19px;
+    font-weight: 500;
+    opacity: 100%;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+.image-head-2 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    font-size: 26px;
+    color: black;
+    opacity: 100%;
+}
+
+.image-text-2 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    font-size: 22px;
+    opacity: 100%;
+    color: black;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 992px) {
+    .logo-header {
+        font-size: 4.5rem;
+        margin-top: 10%;
+    }
+    .intro-text {
+        margin-top: 60px;
+        font-size: 18px;
+    }
+    .intro-text-2 {
+        display: inline;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .shading {
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(2, 3, 5, 0.5)
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .artifact-box-1 {
+        height: 100vh;
+        width: 100%;
+        background-size: 100vh;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .image-head-1 {
+        font-size: 36px;
+    }
+    .image-text-1 {
+        top: 67%;
+        font-size: 24px;
+    }
+    .image-head-2 {
+        font-size: 36px;
+    }
+    .image-text-2 {
+        top: 67%;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .accountform {
+        position: absolute;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50%);
+        padding: 100px 40px 100px 40px;
+    }
+}
+
 /*login-register.html*/
 
 .accountform {
-    padding-top: 100px;
+    padding: 100px 20px 100px 20px;
+    border: 1px solid rgba(2, 3, 5, 0.2);
+    border-radius: 15px;
+    margin: 20px 20px;
 }
 
 /*products.html*/
