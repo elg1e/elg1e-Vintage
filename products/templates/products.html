@@ -9,7 +9,7 @@
                 <h3 class="product-name">{{ product.name }}</h3>
                 <p class="product-description">{{ product.description }}</p>
                 <h4 class="product-bidding">Current bids:<span class="product-price">{{ product.price }}{% include 'bids.html' %}</span></h4>
-            <h4 class="product-bidding">Buyout Price:<span class="product-price">{{ product.buyout }}
+                <h4 class="product-bidding">Buyout Price:<span class="product-price">{{ product.buyout }}
             <form method="POST" action="{% url 'add_to_cart' product.id %}">
                 {% csrf_token %}
                 <div class="input-group">
@@ -17,7 +17,8 @@
                     <button class="btn btn-success product-button" type="submit">Buy It Now</button>
                 </div>
             </form>
-            </span></h4>
+            </span>
+            </h4>
         </div>
     </div>
     {% endfor %}
