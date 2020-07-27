@@ -2,9 +2,11 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from products.views import Product
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
+@login_required(redirect_field_name='products')
 def add_bid(request, id):
     """
     how user bids
