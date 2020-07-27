@@ -9,7 +9,7 @@ from products.models import Product
 import stripe
 
 
-# Create your views here.
+# stripe api
 
 stripe.api_key = settings.STRIPE_SECRET
 
