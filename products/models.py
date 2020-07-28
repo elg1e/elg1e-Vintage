@@ -5,8 +5,8 @@ from django.db import models
 class Product(models.Model):
     name = models.CharField(max_length=250)
     description = models.TextField()
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    buyout = models.DecimalField(max_digits=6, decimal_places=2)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    buyout = models.DecimalField(max_digits=10, decimal_places=2)
     auctionTimer = models.DateTimeField(null=True)
     image = models.ImageField(upload_to='images')
 
