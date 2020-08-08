@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<!--Each Product-->
+<div class="container product-container">
+    <div class="row">
+        <div class="col-12 checkout-title">
+            <div class="logo-header-profile">
+                <h1>Artifacts</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 productinfo-box">
+            <div class="panel-body">
+                <div class="productinfo-img" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+                    <h3 class="product-name">{{ product.name }}</h3>
+                    <p class="product-description">{{ product.description }}</p>
+                    <h4 class="product-bidding">Current bids:<span class="product-price">{{ product.price }}{% include 'bids.html' %}</span></h4>
+                    <h4 class="product-buyout">Buyout Price:<span class="product-price">{{ product.buyout }}</span></h4>
+                    <form method="POST" action="{% url 'add_to_cart' product.id %}" class="buyout-button">
+                    {% csrf_token %}
+                        <div class="input-group">
+                            <span class="input-group-btn"></span>
+                            <button class="btn btn-success product-button" type="submit">Buy It Now</button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
