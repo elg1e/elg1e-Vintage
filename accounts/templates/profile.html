@@ -1,5 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
-    <h2>Success!</h2>
-    <p>You are logged in as {{ user.email }} </p>
+    <!--Profile Page-->
+    <div class="container profile-container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="logo-header-profile">Vintage</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 profile-box">
+                <h2>Success!</h2>
+                <p>You are logged in as: </p>
+                <p>{{ user.username }}</p>
+                <p>{{ user.email }}</p>
+            </div>
+        </div>
+    </div>
 {% endblock %}
