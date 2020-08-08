@@ -4,7 +4,7 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-/*base.html*/
+/* base.html */
 
 .logo-nav {
     font-family: 'Alex Brush', cursive;
@@ -12,24 +12,21 @@ body {
 }
 
 footer {
+    position: relative;
     bottom: 0;
     left: 0;
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 5px;
     border-top: 1px solid #ededed;
     color: #A9A9A9;
 }
 
-.social {
-    float: right;
-    padding-right: 15px;
-}
-
 .creator {
     float: left;
 }
 
-/*index.html*/
+/* index.html */
 
 .title-heading {
     text-align: center;
@@ -54,10 +51,6 @@ footer {
     display: none;
     font-size: 16px;
     font-weight: 900;
-}
-
-.hyper-text:hover {
-    font-style: italic;
 }
 
 .shading {
@@ -106,7 +99,6 @@ footer {
     background-color: rgb(255, 255, 255);
 }
 
-
 .image-head-1 {
     position: absolute;
     top: 25%;
@@ -118,7 +110,11 @@ footer {
     opacity: 100%;
     text-align: center;
     text-shadow: 2px 2px black;
+}
 
+.image-head-1:hover {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .image-text-1 {
@@ -132,6 +128,12 @@ footer {
     color: white;
     text-align: center;
     text-shadow: 2px 2px black;
+    border-bottom: none;
+}
+
+.image-text-1:hover {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .image-head-2 {
@@ -140,6 +142,7 @@ footer {
     left: 50%;
     transform: translate( -50%, -50%);
     font-size: 26px;
+    text-align: center;
     color: black;
     opacity: 100%;
 }
@@ -150,8 +153,193 @@ footer {
     left: 50%;
     transform: translate( -50%, -50%);
     font-size: 22px;
+    text-align: center;
     opacity: 100%;
     color: black;
+}
+
+/* login-register.html */
+
+.accountform {
+    padding: 100px 20px 100px 20px;
+    border: 1px solid rgba(2, 3, 5, 0.2);
+    border-radius: 15px;
+    margin: 20px 20px;
+}
+
+/* Profile.html */
+
+.profile-container {
+    text-align: center;
+}
+
+.profile-box {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 15px;
+}
+
+.logo-header-profile {
+    font-family: 'Alex Brush', cursive;
+    font-size: 3.5rem;
+    margin-top: 40px;
+}
+
+/* products.html */
+
+.product-container{
+    position: relative;
+    min-height: 100vh;
+}
+
+.product-box {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.panel-body {
+    width: 100%;
+    height: 100%;
+}
+
+.product-img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-name {
+    font-size: 24px;
+    padding: 5px;
+    color: black;
+    text-align: center;
+}
+
+.product-nameLink:hover {
+    color: black;
+}
+
+.product-description {
+    font-size: 14px;
+    font-weight: 900;
+    padding-top: 10px;
+}
+
+.product-bidding {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 22px;
+    padding-left: 10px;
+}
+
+.product-button {
+    float: right;
+    font-size: 12px;
+}
+
+.product-buyout {
+    float: left;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.buyout-button {
+    float: right;
+    margin-top: 15px;
+}
+
+/* Productsinfo.html */
+
+.productinfo-box {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.productinfo-img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* cart.html */
+
+.cart-itemContainer {
+    padding: 10px;
+}
+
+.remove-button {
+    margin-top: 20px;
+    float: right;
+}
+
+.cart-price {
+    margin-top: 25px;
+    float: left;
+}
+
+.totalPrice-Container {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.cart-totalText {
+    float: left;
+    padding-top: 7px;
+}
+
+.cart-totalPrice {
+    float: left;
+    padding-top: 7px;
+    padding-left: 10px;
+}
+
+.checkout-button {
+    float: right;
+}
+
+.cart-itemContainer {
+    text-align: center;
+}
+
+.cart-emptyContainer {
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 50%;
+}
+
+.cart-emptyText {
+    padding: 20px;
+}
+
+/* Checkout.html */
+
+.checkout-productDetails {
+    border-bottom: 1px solid black;
+}
+
+.checkout-formBox {
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 30px 0;
+}
+
+.checkout-text {
+    font-size: 20px;
+}
+
+.checkout-title {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Media Queries */
@@ -215,62 +403,18 @@ footer {
     }
 }
 
-/*login-register.html*/
-
-.accountform {
-    padding: 100px 20px 100px 20px;
-    border: 1px solid rgba(2, 3, 5, 0.2);
-    border-radius: 15px;
-    margin: 20px 20px;
+@media only screen and (min-width: 992px) {
+    .cart-emptyContainer {
+        margin-bottom: 30%;
+    }
 }
 
-/*products.html*/
-
-.product-container{
-    height: 100vh;
+@media only screen and (min-width: 500px) {
+    .productinfo-img {
     width: 100%;
-}
-
-.product-box {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-}
-
-.panel-body {
-    width: 100%;
-    height: 100%;
-}
-
-.product-img {
-    width: 100%;
-    height: 300px;
-    background-size: cover;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
-}
-
-.product-name {
-    font-size: 24px;
-    padding: 5px;
-
-}
-
-.product-description {
-    font-size: 14px;
-    font-weight: 900;
-    padding-top: 10px;
-}
-
-.product-bidding {
-    font-size: 18px;
-}
-
-.product-price {
-    font-size: 22px;
-    padding-left: 10px;
-}
-
-.product-button {
-    float: right;
-    font-size: 12px;
+    }
 }
