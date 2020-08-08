@@ -1,44 +1,36 @@
 {% extends 'base.html' %}
 {% block content %}
+
+<!--Homepage Content-->
 <div class="container title-heading">
-    <h3 class="logo-header">Vintage</h3>
-    <p class="intro-text">Welcome to Vintage, the best way to learn and shop for all types of Artifacts.</p>
-    <p class="intro-text-2">Here you can discovery and learn about historical artifacts and even get a chance to purchase! Simply find an artifact you wish to learn about.</p>
+	<h3 class="logo-header">Vintage</h3>
+	<p class="intro-text">Welcome to Vintage, the best way to learn and shop for all types of Artifacts.</p>
+	<p class="intro-text-2">Here you can discovery and learn about historical artifacts and even get a chance to purchase! Simply find an artifact you wish to learn about.</p>
 </div>
-
 <div class="border-box">
-
-<div class="artifact-box-1">
-    <a class="hyper" href="{% url 'products' %}">
-        <div class="shading">
-            <a class="hyper-text" href="{% url 'products' %}">
-                <h5 class="image-head-1">Discover Artifacts</h5>
-                <p class="image-text-1">Search through ancient artifacts from all over the globe</p>
-            </a>
-        </div>
-    </a>
-</div>
-
-<div class="artifact-box-2">
-    <h5 class="image-head-2">Collect Artifacts</h5>
-    <p class="image-text-2">Create your own collection of historical artifacts in your own home</p>
-</div>
-
-<div class="artifact-box-3">
-    <a class="hyper" href="{% url 'products' %}">
-        <div class="shading">
-            <a class="hyper-text" href="{% url 'products' %}">
-                <h5 class="image-head-1">Learn About Artifacts</h5>
-                <p class="image-text-1">About history in a way that you have never learnt before</p>
-            </a>
-        </div>
-    </a>
-</div>
-
-<div class="artifact-box-4">
-    <h5 class="image-head-2">Auction On Artifacts</h5>
-    <p class="image-text-2">New Artifacts will be addded by our teams and placeed on Vintage to be auctioned on</p>
-</div>
-
+	<div class="artifact-box-1">
+		<div class="shading">
+			<a class="hyper-text" href="{% url 'products' %}">
+			    <h5 class="image-head-1">Discover Artifacts</h5>
+				<p class="image-text-1">Search through ancient artifacts from all over the globe</p>
+			</a>
+		</div>
+	</div>
+	<div class="artifact-box-2">
+		<h5 class="image-head-2">Collect Artifacts</h5>
+		<p class="image-text-2">Create your own collection of historical artifacts in your own home</p>
+	</div>
+	<div class="artifact-box-3">
+		<div class="shading">
+			<a class="hyper-text" href="{% url 'products' %}">
+				<h5 class="image-head-1">Learn About Artifacts</h5>
+				<p class="image-text-1">About history in a way that you have never learnt before</p>
+			</a>
+		</div>
+	</div>
+	<div class="artifact-box-4">
+		<h5 class="image-head-2">Auction On Artifacts</h5>
+		<p class="image-text-2">New Artifacts will be addded by our teams and placeed on Vintage to be auctioned on</p>
+	</div>
 </div>
 {% endblock %}
