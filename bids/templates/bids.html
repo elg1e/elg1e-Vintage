@@ -1,7 +1,7 @@
 <!--bid button-->
 <form method="POST" action="{% url 'add_bid' product.id %}">
 {% csrf_token %}
-    <div class="input-group">
+    <div class="input-group bidsFormBtn">
         <input name="bid" type="number" min="1" max="999" class="form-control" placeholder="Bid" required>
         <span class="input-group-btn"></span>
         <button class="btn btn-success product-button" type="submit">Bid</button>

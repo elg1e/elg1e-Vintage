@@ -21,8 +21,9 @@
     {% endblock %}
 </head>
 <body>
-    <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navigation">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,9 +72,12 @@
         </div>
     {% endif %}
         {% block content %} {% endblock %}
-    <!--Footer-->
-    <footer>
+<!--Footer-->
+<footer>
+    <div class="container">
         <p class="creator">Created by Dominic Elgie</p>
-    </footer>
+    </div>
+</footer>
+
 </body>
 </html>

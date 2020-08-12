@@ -12,12 +12,8 @@ body {
 }
 
 footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 5px;
+    height: 60px;
     border-top: 1px solid #ededed;
     color: #A9A9A9;
 }
@@ -231,6 +227,7 @@ footer {
 .product-bidding {
     font-size: 18px;
     margin-bottom: 10px;
+    float: left;
 }
 
 .product-price {
@@ -394,12 +391,13 @@ footer {
 
 @media only screen and (min-width: 992px) {
     .accountform {
-        position: absolute;
         width: 50%;
         top: 50%;
         left: 50%;
-        transform: translate( -50%, -50%);
+        transform: translate( 50%, 0%);
         padding: 100px 40px 100px 40px;
+        margin-top: 40px;
+        margin-bottom: 275px;
     }
 }
 
@@ -416,5 +414,12 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .bidsFormBtn {
+        width: 50%;
+        float: right;
     }
 }

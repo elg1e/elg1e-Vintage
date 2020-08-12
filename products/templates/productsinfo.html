@@ -15,15 +15,20 @@
                 <div class="productinfo-img" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
                     <h3 class="product-name">{{ product.name }}</h3>
                     <p class="product-description">{{ product.description }}</p>
-                    <h4 class="product-bidding">Current bids:<span class="product-price">{{ product.price }}{% include 'bids.html' %}</span></h4>
+                <div class="productPrice-box">
+                    <h4 class="product-bidding">Current bids:<span class="product-price">{{ product.price }}</span></h4>
+                    {% include 'bids.html' %}
+                </div>
+                <div class="productBuyout-box">
                     <h4 class="product-buyout">Buyout Price:<span class="product-price">{{ product.buyout }}</span></h4>
                     <form method="POST" action="{% url 'add_to_cart' product.id %}" class="buyout-button">
-                    {% csrf_token %}
+                        {% csrf_token %}
                         <div class="input-group">
                             <span class="input-group-btn"></span>
                             <button class="btn btn-success product-button" type="submit">Buy It Now</button>
                         </div>
                     </form>
+                </div>
             </div>
         </div>
     </div>
