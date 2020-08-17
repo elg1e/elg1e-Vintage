@@ -1,22 +1,21 @@
 # Vintage
 
-Vintage is a ecommerce web application which allows users to shop, search, bid and purchase vintage artifacts. The aim is simple, users can go online and find cool vintage artifacts. 
+Vintage is an ecommerce web application which allows users to shop, search, bid and purchase vintage artifacts. The aim is simple, users can go online and find cool vintage artifacts. 
 
-<!--Add more sales pitch-->
-Users simply create a account or login and search for artifacts they wish to learn about or purchase. If they see something they desire or want to keep and eye on they can place a bid or buy an item just buy it out right with the price which we have set.
+Users simply search for artifacts they wish to learn about or purchase. If they see something they desire or want to keep and eye on they can create an account and either place a bid using the original auction-style system or buy an item instantly with the 'Buy It Now' button.
 
 # UX
 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
-This project is aimed at the all generations looking to learn about historical artifacts and have the chance to purchase items from many historical times.
+This project is aimed at all generations fascinated by the ancient world. The website is clean and simple allowing users to discover artifacts, learn about their history and purchase the items using the easy to follow bidding system or buy it now option. The simplistic navigation bar allows for a seamless transition between pages and the muted colour scheme creates an appealing platform for the artifacts to shine.
 
 ## User Stories
 
-* As a user, I would like to search for my ideal item of clothing so that I can narrow down my search faster.
-* As a user, I would like to press a button so that I can save items for a period of time so that I can decide on purchasing.
+* As a user, I would like to search for my ideal item so that I can narrow down my search faster.
 * As a user, I would like to store items while I look for something else I'd like to purchase, then go back and purchase everything together.
 * As a user, I would like to try and bid on an item to try and purchase for a low price.
+* As a user, I would like to find an item I like and purchase straight away without bidding.
+* As a user, I would like to be able to press a button to help me if I've lost my password. I would then like a email confirmation to give me my new password setup. 
+* As a user, I would like to find what I'm looking for fast, by simply pressing one button to get to a list of items I wish to purchase.
 
 As a user type, I want to perform an action, so that I can achieve a goal.
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
@@ -31,7 +30,7 @@ This section is also where you would share links to any wireframes, mockups, dia
 
 ## Homepage
 
- The Homepage in mobile resolution consists of a title, search bar, links to each section of the site, navigation bar and sign in/register links. By pressing the title it will hyperlink you back to the homepage for easy access. The search bar is to search for a specific items.
+ The Homepage in mobile resolution consists of a title, search bar, links to each section of the site, navigation bar and sign in/register links. By pressing the title it will hyperlink you back to the homepage for easy access. The search bar is to search for a specific item.
 The sign in or register links are to sign up to the website which will allow you to bid and buy out items, add items to your cart or check your bidding progress.
 
  The Homepage in desktop resolution will still have all of the above but the navigation bar will be different to the mobile resolution due to having more space for extra description. 
@@ -42,8 +41,8 @@ The sign in or register links are to sign up to the website which will allow you
 
 ## Bidding/Buying Out
 
- The Bidding and Buying out system is designed to allow users to try and out bid eachother on items they wish to purchase but, the items will also have a buy out price, so if they wish to just buy the items straight away without missing
-out on the chance to recieve the items they can do so buy pressing buy now.
+ The Bidding and Buying out system is designed to allow users to out bid eachother on items they wish to purchase. The items will also have a buy out price, so if they wish to buy the items instantaniously to avoid missing
+out they can do so with this function.
 
 ### Future features
 
@@ -65,6 +64,7 @@ from the users view, stopping any further bids and making the last highest bidde
 * [FontAwesome](https://fontawesome.com/)Font Awesome is a font and icon toolkit based on CSS and LESS. 
 * [Stripe](https://stripe.com/gb)Stripe API is a payment processing platform.
 * [GitHub](https://github.com/)Is website that provides hosting for software development.
+* [Hover.css](https://ianlunn.github.io/Hover/)Is a GitHub repository which was made for creating hover effects.
 
 # Testing
 
@@ -109,7 +109,7 @@ from the users view, stopping any further bids and making the last highest bidde
 4. Enter your email.
 5. Press Reset Password.
 6. Page will appear informing you that you will recieve an email.
-7. follow the steps in the email.
+7. Follow the steps in the email.
 
 #### Artifacts
 
@@ -154,20 +154,7 @@ from the users view, stopping any further bids and making the last highest bidde
 5. Follow the instructions for payment.
 6. Press the Submit Payment button.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
 # Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
 
  To create the website, I have used the coding platform Gitpod. Deployment and source control was done via GitHub and Heroku.
 
