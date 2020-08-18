@@ -7,6 +7,7 @@ from django.contrib.auth.decorators import login_required
 
 
 def index(request):
+    """A view that opens Index.html"""
     return render(request, "index.html")
 
 
