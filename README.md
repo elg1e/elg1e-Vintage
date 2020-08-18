@@ -1,6 +1,6 @@
-# Vintage
+![Vintage Logo](https://github.com/elg1e/elg1e-Vintage/static/images/VintageText.jpg)
 
-Vintage is an ecommerce web application which allows users to shop, search, bid and purchase vintage artifacts. The aim is simple, users can go online and find cool vintage artifacts. 
+Vintage is an ecommerce web application which allows users to shop, search, bid and purchase vintage artifacts. The aim is to allow users to go online and navigate the easy to use website to discover their most desired vintage artifacts. 
 
 Users simply search for artifacts they wish to learn about or purchase. If they see something they desire or want to keep and eye on they can create an account and either place a bid using the original auction-style system or buy an item instantly with the 'Buy It Now' button.
 
@@ -17,10 +17,10 @@ This project is aimed at all generations fascinated by the ancient world. The we
 * As a user, I would like to be able to press a button to help me if I've lost my password. I would then like a email confirmation to give me my new password setup. 
 * As a user, I would like to find what I'm looking for fast, by simply pressing one button to get to a list of items I wish to purchase.
 
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
-
 ## Wireframes/Mockups
+
+![Wireframe1](https://github.com/elg1e/elg1e-Vintage/static/images/vintageWireframe1.jpg)
+![Wireframe2](https://github.com/elg1e/elg1e-Vintage/static/images/vintageWireframe2.jpg)
 
 # Features
 
