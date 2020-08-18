@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b0399b4b92.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/script.js'%}"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css.map" integrity="undefined" crossorigin="anonymous" />
@@ -29,6 +30,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <a href="{% url 'index'%}"><img src="/static/images/Vintage-logo.png" alt="vintage-logo" class="vintage-logo"></a>
                 <a class="navbar-brand logo-nav" href="{% url 'index' %}">Vintage</a>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -51,10 +53,10 @@
                             {% endif %}
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <form class="form-inline my-2 my-lg-0" action="{% url 'search'%}" method="GET">
-                            <input class="form-control mr-sm-2" type="text" name="q" required>
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <li class="nav-item nav-searchbar">
+                        <form class="form-inline" action="{% url 'search'%}" method="GET">
+                            <input class="form-control col-lg-8 navSearch-input" type="text" name="q" required>
+                            <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </li>
                 </ul>
