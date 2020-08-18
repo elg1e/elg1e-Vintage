@@ -43,7 +43,11 @@
         <div class="col-12">
             <p class="cart-totalText">Total Price:</p>
             <p class="cart-totalPrice">{{ total }}</p>
+            {% if product_count > 0 %}
             <a href="{% url 'checkout' %}" class="btn btn-success checkout-button" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
+            {% else %}
+            <a href="{% url 'view_cart' %}" style="display:none;" class="btn btn-success checkout-button" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
+            {% endif %}
         </div>
     </div>
 </div>
