@@ -4,12 +4,11 @@ from products.views import Product
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
-# Create your views here.
 
 @login_required(redirect_field_name='products')
 def add_bid(request, id):
     """
-    how user bids
+    how a user bids
     """
     product = get_object_or_404(Product, pk=id)
     bid = int(float(request.POST.get('bid')))
