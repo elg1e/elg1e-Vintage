@@ -1,4 +1,4 @@
-![Vintage Logo](https://github.com/elg1e/elg1e-Vintage/static/images/VintageText.jpg)
+![Vintage Logo](https://github.com/elg1e/elg1e-Vintage/blob/master/static/images/VintageText.jpg)
 
 Vintage is an ecommerce web application which allows users to shop, search, bid and purchase vintage artifacts. The aim is to allow users to go online and navigate the easy to use website to discover their most desired vintage artifacts. 
 
@@ -19,8 +19,8 @@ This project is aimed at all generations fascinated by the ancient world. The we
 
 ## Wireframes/Mockups
 
-![Wireframe1](https://github.com/elg1e/elg1e-Vintage/static/images/vintageWireframe1.jpg)
-![Wireframe2](https://github.com/elg1e/elg1e-Vintage/static/images/vintageWireframe2.jpg)
+![Wireframe1](https://github.com/elg1e/elg1e-Vintage/blob/master/static/images/vintageWireframe1.jpg)
+![Wireframe2](https://github.com/elg1e/elg1e-Vintage/blob/master/static/images/vintageWireframe2.jpg)
 
 # Features
 
