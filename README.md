@@ -52,19 +52,19 @@ from the users view, stopping any further bids and making the last highest bidde
 
 # Technologies Used
 
-* [HTML](https://en.wikipedia.org/wiki/HTML)Mark-up language used for creating the website.
-* [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)Stylesheet language used to create the presentation of the website.
-* [JS](https://www.javascript.com/)Is a high-level, just-in-time compiled, object-oriented programming language.
-* [JQuery](https://jquery.com/)Used to simplify some of the DOM manipulations.
-* [Python](https://www.python.org/)Is an interpreted, high-level, general-purpose programming language.
-* [Django](https://www.djangoproject.com/)Django is a Python-based free and open-source web framework, which follows the model-template-view architectural pattern.
-* [Travis](https://travis-ci.org/)Travis CI is a hosted continuous integration service used to build and test software projects hosted at GitHub.
-* [Heroku](https://www.heroku.com/)Is a cloud platform as a service supporting several programming languages.
-* [Bootstrap](https://getbootstrap.com/)Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
-* [FontAwesome](https://fontawesome.com/)Font Awesome is a font and icon toolkit based on CSS and LESS. 
-* [Stripe](https://stripe.com/gb)Stripe API is a payment processing platform.
-* [GitHub](https://github.com/)Is website that provides hosting for software development.
-* [Hover.css](https://ianlunn.github.io/Hover/)Is a GitHub repository which was made for creating hover effects.
+* [HTML](https://en.wikipedia.org/wiki/HTML) Mark-up language used for creating the website.
+* [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) Stylesheet language used to create the presentation of the website.
+* [JS](https://www.javascript.com/) Is a high-level, just-in-time compiled, object-oriented programming language.
+* [JQuery](https://jquery.com/) Used to simplify some of the DOM manipulations.
+* [Python](https://www.python.org/) Is an interpreted, high-level, general-purpose programming language.
+* [Django](https://www.djangoproject.com/) Django is a Python-based free and open-source web framework, which follows the model-template-view architectural pattern.
+* [Travis](https://travis-ci.org/) Travis CI is a hosted continuous integration service used to build and test software projects hosted at GitHub.
+* [Heroku](https://www.heroku.com/) Is a cloud platform as a service supporting several programming languages.
+* [Bootstrap](https://getbootstrap.com/) Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
+* [FontAwesome](https://fontawesome.com/) Font Awesome is a font and icon toolkit based on CSS and LESS. 
+* [Stripe](https://stripe.com/gb) Stripe API is a payment processing platform.
+* [GitHub](https://github.com/) Is website that provides hosting for software development.
+* [Hover.css](https://ianlunn.github.io/Hover/) Is a GitHub repository which was made for creating hover effects.
 
 # Testing
 
