@@ -9,27 +9,32 @@
             </div>
         </div>
     </div>
+
     <div class="row">
         <div class="col-12 productinfo-box">
-            <div class="panel-body">
-                <div class="productinfo-img" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
-                    <h3 class="product-name">{{ product.name }}</h3>
-                    <p class="product-description">{{ product.description }}</p>
-                <div class="productPrice-box">
-                    <h4 class="product-bidding">Current bids:<span class="product-price">{{ product.price }}</span></h4>
-                    {% include 'bids.html' %}
+            <div class="productinfo-img" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+            <h3 class="product-name">{{ product.name }}</h3>
+            <p class="product-description">{{ product.description }}</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 productPrice-box">
+            <h4 class="product-bidding">Current bids:<span class="product-price">{{ product.price }}</span></h4>
+            {% include 'bids.html' %}
+        </div>
+        <div class="col-12 productPrice-box">
+            <h4 class="product-buyout">Buyout Price:<span class="product-price">{{ product.buyout }}</span></h4>
+            <form method="POST" action="{% url 'add_to_cart' product.id %}" class="buyout-button">
+                {% csrf_token %}
+                <div class="input-group">
+                    <span class="input-group-btn"></span>
+                    <button class="btn btn-success product-button" type="submit">Buy It Now</button>
                 </div>
-                <div class="productBuyout-box">
-                    <h4 class="product-buyout">Buyout Price:<span class="product-price">{{ product.buyout }}</span></h4>
-                    <form method="POST" action="{% url 'add_to_cart' product.id %}" class="buyout-button">
-                        {% csrf_token %}
-                        <div class="input-group">
-                            <span class="input-group-btn"></span>
-                            <button class="btn btn-success product-button" type="submit">Buy It Now</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+            </form>
+        </div>
+        <div class="col-12 productPrice-box">
+            <h4 class="item-expiry">Item Expires: <span class="product-expiryDate">{{ product.auctionTimer }}</span></h4>
         </div>
     </div>
 </div>
