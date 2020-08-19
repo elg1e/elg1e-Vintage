@@ -291,6 +291,11 @@ footer {
     padding-left: 10px;
 }
 
+.current-bidder {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .product-button {
     float: right;
     font-size: 12px;
