@@ -7,6 +7,6 @@ import datetime
 class bidding(models.Model):
     product = models.ForeignKey(Product, null=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    bids = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(1000)])
+    bids = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(100000)])
     date = models.DateField(auto_now_add=False)
     time = models.TimeField(default=datetime.datetime.now, auto_now=False, auto_now_add=False)

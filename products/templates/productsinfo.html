@@ -20,6 +20,7 @@
 
     <div class="row">
         <div class="col-12 productPrice-box">
+            <h4>Current Highest Bidder: {{ product.highestBidder }}</h4>
             <h4 class="product-bidding">Current bids:<span class="product-price">{{ product.price }}</span></h4>
             {% include 'bids.html' %}
         </div>

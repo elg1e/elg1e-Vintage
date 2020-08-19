@@ -16,6 +16,7 @@ def add_bid(request, id):
     if bid > product.price:
         """ change Product.price to bid price """
         product.price = bid
+        product.highestBidder = request.user.username
         product.save()
         messages.success(request, 'You are now the highest bidder!')
         return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
