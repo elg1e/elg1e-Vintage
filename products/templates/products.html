@@ -1,24 +1,28 @@
 {% extends 'base.html' %}
 {% block content %}
+
 <!--Each Product-->
 <div class="container product-container">
-    <div class="row">
-        <div class="col-12 checkout-title">
-            <div class="logo-header-profile">
-                <h1>Artifacts</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
+	<div class="row">
+		<div class="col-12 checkout-title">
+			<div class="logo-header-profile">
+				<h1>Artifacts</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row">
         {% for product in products %}
-        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-md-4 display panel panel-default product-box">
-            <div class="panel-body">
-                <a href="{% url 'product_info' product.id %}"><div class="product-img" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div></a>
-                <a href="{% url 'product_info' product.id %}" class="product-nameLink">{{ product.name }}</a>
-            </div>
-        </div>
+        
+		<div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-md-4 display panel panel-default product-box">
+			<div class="panel-body">
+				<a href="{% url 'product_info' product.id %}">
+					<div class="product-img" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+				</a>
+				<a href="{% url 'product_info' product.id %}" class="product-nameLink">{{ product.name }}</a>
+			</div>
+		</div>
         {% endfor %}
-    </div>
+    
+	</div>
 </div>
 {% endblock %}

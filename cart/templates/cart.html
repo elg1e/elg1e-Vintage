@@ -1,54 +1,66 @@
 {% extends 'base.html' %}
 {% block content %}
+
 <!--Each Product -->
 <div class="container cart-itemContainer">
-    <div class="row">
-        <div class="col-12 checkout-title">
-            <div class="logo-header-profile">
-                <h1>Shopping Cart</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
+	<div class="row">
+		<div class="col-12 checkout-title">
+			<div class="logo-header-profile">
+				<h1>Shopping Cart</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row">
         {% for item in cart_items %}
-        <div class="col-xs-12 col-sm-6 col-md-4 product-box">
-            <div class="product-img" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
-                <div class="product-description">
-                    <h3>{{ item.product.name }}</h3>
-                    <p class="cart-price">Item Price: {{ item.product.buyout }}</p>
-                    <form class="remove-button" method="post" action="{% url 'adjust_cart' item.id %}">
+        
+		<div class="col-xs-12 col-sm-6 col-md-4 product-box">
+			<div class="product-img" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
+			<div class="product-description">
+				<h3>{{ item.product.name }}</h3>
+				<p class="cart-price">Item Price: {{ item.product.buyout }}</p>
+				<form class="remove-button" method="post" action="{% url 'adjust_cart' item.id %}">
                         {% csrf_token %}
-                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Remove</button>
-                    </form>
-                </div>
-        </div>
-        <!--If Cart is Empty-->
+                        
+					<button type="submit" class="btn btn-primary">
+						<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Remove
+					</button>
+				</form>
+			</div>
+		</div>
+		<!--If Cart is Empty-->
         {% empty %}
-        <div class="container cart-emptyContainer">
-            <div class="row">                
-                <div class="col-12">
-                    <h2 class="cart-emptyText">Your Cart is Empty</h2>
-                    <i class="fas fa-shopping-cart fa-4x"></i>
-                </div>
-            </div>
-        </div>
+        
+		<div class="container cart-emptyContainer">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="cart-emptyText">Your Cart is Empty</h2>
+					<i class="fas fa-shopping-cart fa-4x"></i>
+				</div>
+			</div>
+		</div>
         {% endfor %}
-    </div>
+    
+	</div>
 </div>
-
 <!--Cart Total-->
 <div class="container totalPrice-Container">
-    <div class="row">
-        <div class="col-12">
-            <p class="cart-totalText">Total Price:</p>
-            <p class="cart-totalPrice">{{ total }}</p>
+	<div class="row">
+		<div class="col-12">
+			<p class="cart-totalText">Total Price:</p>
+			<p class="cart-totalPrice">{{ total }}</p>
             {% if product_count > 0 %}
-            <a href="{% url 'checkout' %}" class="btn btn-success checkout-button" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
+            
+			<a href="{% url 'checkout' %}" class="btn btn-success checkout-button" role="button">
+				<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout
+			</a>
             {% else %}
-            <a href="{% url 'view_cart' %}" style="display:none;" class="btn btn-success checkout-button" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
+            
+			<a href="{% url 'view_cart' %}" style="display:none;" class="btn btn-success checkout-button" role="button">
+				<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout
+			</a>
             {% endif %}
-        </div>
-    </div>
+        
+		</div>
+	</div>
 </div>
 {% endblock %}
