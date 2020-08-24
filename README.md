@@ -188,3 +188,4 @@ The images used in this site were obtained from:
 * [The Image of Agamemnon](https://www.oddee.com/list/10-incredible-historical-artifacts/)
 * [Thor's Hammer](https://www.ancient-origins.net/artifacts-other-artifacts/ten-amazing-artifacts-ancient-world-002105)
 * [Antikythera Mechanism](https://www.vox.com/science-and-health/2017/5/17/15646450/antikythera-mechanism-greek-computer-astronomy-google-doodle)
+* [Nefertiti Bust](https://en.wikipedia.org/wiki/Nefertiti_Bust)
