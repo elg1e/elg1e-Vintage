@@ -90,7 +90,7 @@ footer {
     margin: 0;
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     background-color: rgb(255, 255, 255);
 }
 
@@ -110,7 +110,7 @@ footer {
     margin: 0;
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     background-color: rgb(255, 255, 255);
 }
 
@@ -178,7 +178,7 @@ footer {
     top: 75%;
     left: 50%;
     transform: translate( -50%, -50%);
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     opacity: 100%;
     color: black;
@@ -246,6 +246,7 @@ footer {
     height: 300px;
     background-size: cover;
     background-position: center;
+    border-radius: 5px;
 }
 
 .product-name {
@@ -325,6 +326,7 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 5px;
 }
 
 .item-expiry {
@@ -457,12 +459,6 @@ footer {
         height: 100vh;
         width: 100%;
         background-color: rgba(2, 3, 5, 0.5)
-    }
-
-    .artifact-box-1 {
-        height: 100vh;
-        width: 100%;
-        background-size: 100vh;
     }
 
     .image-head-1 {
