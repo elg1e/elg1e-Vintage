@@ -176,7 +176,7 @@ Follow these steps for deployment using Heroku:
 
 ## Content
 
-The description for each of the images on the website was taken from [wikipedia](https://www.wikipedia.org/), [Ancient Origins](https://www.ancient-origins.net/artifacts-other-artifacts/ten-amazing-artifacts-ancient-world-002105)
+The description for each of the images on the website was taken from [wikipedia](https://www.wikipedia.org/), [Ancient Origins](https://www.ancient-origins.net/artifacts-other-artifacts/ten-amazing-artifacts-ancient-world-002105) and [iwm](https://www.iwm.org.uk/history/8-peculiar-battle-trophies-taken-from-the-front)
 
 ## Media
 
@@ -189,3 +189,6 @@ The images used in this site were obtained from:
 * [Thor's Hammer](https://www.ancient-origins.net/artifacts-other-artifacts/ten-amazing-artifacts-ancient-world-002105)
 * [Antikythera Mechanism](https://www.vox.com/science-and-health/2017/5/17/15646450/antikythera-mechanism-greek-computer-astronomy-google-doodle)
 * [Nefertiti Bust](https://en.wikipedia.org/wiki/Nefertiti_Bust)
+* [Trench Dagger](https://www.iwm.org.uk/history/8-peculiar-battle-trophies-taken-from-the-front)
+* [Cavalry Bugle](https://www.iwm.org.uk/history/8-peculiar-battle-trophies-taken-from-the-front)
+* [SpartanLogo](https://st2.depositphotos.com/2527057/10398/v/450/depositphotos_103986174-stock-illustration-spartan-helmet-sign.jpg)
