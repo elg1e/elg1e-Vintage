@@ -166,6 +166,8 @@ MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 os.getenv("EMAIL_HOST_USER")
