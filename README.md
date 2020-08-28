@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/elg1e/elg1e-Vintage.svg?branch=master)](https://travis-ci.org/elg1e/elg1e-Vintage)
+
 ![Vintage Logo](https://github.com/elg1e/elg1e-Vintage/blob/master/static/images/VintageText.jpg)
 
 Vintage is an ecommerce web application which allows users to shop, search, bid and purchase vintage artifacts. The aim is to allow users to go online and navigate the easy to use website to discover their most desired vintage artifacts. 
@@ -160,7 +162,7 @@ from the users view, stopping any further bids and making the last highest bidde
 
 * My repository can be found [here:](https://elg1e.github.io/elg1e-Vintage/)
 
-* The live website was deployed using Heroku. The site can be found [here:]()
+* The live website was deployed using Heroku. The site can be found [here:](https://vintage-fullstack.herokuapp.com/)
 
 Follow these steps for deployment using Heroku:
 
