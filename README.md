@@ -21,6 +21,10 @@ This project is aimed at all generations fascinated by the ancient world. The we
 
 ## Wireframes/Mockups
 
+ Below there are images of my initial ideas/mock-ups of the website:
+
+* Mockup images of the website:
+
 ![Wireframe1](https://github.com/elg1e/elg1e-Vintage/blob/master/static/images/vintageWireframe1.jpg)
 ![Wireframe2](https://github.com/elg1e/elg1e-Vintage/blob/master/static/images/vintageWireframe2.jpg)
 
@@ -155,6 +159,42 @@ from the users view, stopping any further bids and making the last highest bidde
 4. Press checkout.
 5. Follow the instructions for payment.
 6. Press the Submit Payment button.
+
+# Responsive Design
+
+ The website has been tested using the developer tools and also with [Am i Responsive](http://ami.responsivedesign.is/). This was done so that the website will be compatible in all different screen sizes.
+
+ The website has been tested in the following device resolutions:
+
+## Mobiles
+
+* Moto G4
+* Galaxy S5
+* Pixel 2/XL
+* iPhone 5/SE/6/7/8
+* iPhone 6/7/8+
+* iPhone X
+* Galaxy S5/S9/S9+
+* Tablets
+* iPad/iPad Pro
+* Surface Duo
+* Galaxy Fold
+* Desktops/XL Desktops
+
+ The website has been tested with these browsers:
+
+* Google Chrome
+* FireFox
+* Internet Explorer
+* Microsoft Edge
+
+# Validation
+
+ The website has be validated using:
+
+* HTML: [W3C Markup Validation Service](https://validator.w3.org/)
+* CSS: [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+* Jhint: [Javascript Code Quality Tool](https://jshint.com/)
 
 # Deployment
 
