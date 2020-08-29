@@ -6,7 +6,7 @@
 <form method="post" action="{% url 'login' %}?next={{ next }}" class="accountform">
 	<fieldset class="form-group">
 		<legend>Login</legend>
-		<p>Don't have an acccount? 
+		<p>Don't have an account? 
 			<a href="{% url 'register' %}">Register Here</a>
 		</p>
         {% csrf_token %}
