@@ -30,7 +30,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRECT_KEY', "Env value not loaded")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["vintage-fullstack.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["vintage-fullstack.herokuapp.com"]
 
 
 # Application definition
@@ -166,7 +166,7 @@ MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST = 'smtp.gmail.com'
