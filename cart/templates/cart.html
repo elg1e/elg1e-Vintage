@@ -17,7 +17,7 @@
 			<div class="product-img" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
 			<div class="product-description">
 				<h3>{{ item.product.name }}</h3>
-				<p class="cart-price">Item Price: {{ item.product.buyout }}</p>
+				<p class="cart-price">Item Price: &euro;{{ item.product.buyout }}</p>
 				<form class="remove-button" method="post" action="{% url 'adjust_cart' item.id %}">
                         {% csrf_token %}
                         
@@ -47,7 +47,7 @@
 	<div class="row">
 		<div class="col-12">
 			<p class="cart-totalText">Total Price:</p>
-			<p class="cart-totalPrice">{{ total }}</p>
+			<p class="cart-totalPrice">&euro;{{ total }}</p>
             {% if product_count > 0 %}
             
 			<a href="{% url 'checkout' %}" class="btn btn-success checkout-button" role="button">

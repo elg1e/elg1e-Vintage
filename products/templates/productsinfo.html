@@ -23,14 +23,14 @@
 				<span class="product-price">{{ product.highestBidder }}</span>
 			</h4>
 			<h4 class="product-bidding">Current bids:
-				<span class="product-price">{{ product.price }}</span>
+				<span class="product-price">&euro;{{ product.price }}</span>
 			</h4>
             {% include 'bids.html' %}
         
 		</div>
 		<div class="col-12 productPrice-box">
 			<h4 class="product-buyout">Buyout Price:
-				<span class="product-price">{{ product.buyout }}</span>
+				<span class="product-price">&euro;{{ product.buyout }}</span>
 			</h4>
 			<form method="POST" action="{% url 'add_to_cart' product.id %}" class="buyout-button">
                 {% csrf_token %}

@@ -31,7 +31,7 @@
                 <div class="checkout-productDetails">
                     <h4>Product Name: {{ item.product.name }}</h4>
                     <p class="checkout-text">Quantity: {{ item.quantity }}</p>
-                    <p class="checkout-text">Price: {{ item.product.buyout }}</p>
+                    <p class="checkout-text">Price: &euro;{{ item.product.buyout }}</p>
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
     <div class="row">
         <div class="col-12">
             <div class="checkout-totalBox">
-                <h3>Total: {{ total }}</h3>
+                <h3>Total: &euro;{{ total }}</h3>
             </div>
         </div>
     </div>
