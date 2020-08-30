@@ -30,7 +30,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRECT_KEY', "Env value not loaded")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["vintage-fullstack.herokuapp.com"]
+ALLOWED_HOSTS = ["vintage-fullstack.herokuapp.com", "localhost"]
 
 
 # Application definition
@@ -66,7 +66,7 @@ ROOT_URLCONF = 'vintage.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -88,7 +88,8 @@ WSGI_APPLICATION = 'vintage.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 if 'DATABASE_URL' in os.environ:
-    DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
+    DATABASES = {'default': dj_database_url.config(
+        default=os.environ.get('DATABASE_URL'))}
 else:
     print("Database URL not found. Using SQLite instead.")
     DATABASES = {
@@ -166,7 +167,7 @@ MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST = 'smtp.gmail.com'
