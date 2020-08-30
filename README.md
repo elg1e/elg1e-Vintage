@@ -167,7 +167,7 @@ from the users view, stopping any further bids and making the last highest bidde
 
  The website has been tested in the following device resolutions:
 
- ![Responsive Vintage](https://github.com/elg1e/elg1e-Vintage/blob/master/static/images/responsiveVintage.png)
+ ![Responsive Vintage](https://github.com/elg1e/elg1e-Vintage/blob/master/static/images/vintage-responsive.png)
 
 ## Mobiles
 
