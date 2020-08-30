@@ -12,6 +12,7 @@ This project is aimed at all generations fascinated by the ancient world. The we
 
 ## User Stories
 
+* As a user, I would like the website to be responsive with all of my devices.
 * As a user, I would like to search for my ideal item so that I can narrow down my search faster.
 * As a user, I would like to store items while I look for something else I'd like to purchase, then go back and purchase everything together.
 * As a user, I would like to try and bid on an item to try and purchase for a low price.
@@ -166,6 +167,8 @@ from the users view, stopping any further bids and making the last highest bidde
 
  The website has been tested in the following device resolutions:
 
+ ![Responsive Vintage](https://github.com/elg1e/elg1e-Vintage/blob/master/static/images/responsiveVintage.png)
+
 ## Mobiles
 
 * Moto G4
@@ -195,16 +198,32 @@ from the users view, stopping any further bids and making the last highest bidde
 * HTML: [W3C Markup Validation Service](https://validator.w3.org/)
 * CSS: [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 * Jhint: [Javascript Code Quality Tool](https://jshint.com/)
+* Python: [pep8online](http://pep8online.com/)
 
 # Deployment
 
- To create the website, I have used the coding platform Gitpod. Deployment and source control was done via GitHub and Heroku.
+ The live website was deployed using Heroku. The site can be found [here:](https://vintage-fullstack.herokuapp.com/)
 
-* My repository can be found [here:](https://elg1e.github.io/elg1e-Vintage/)
+ My repository can be found [here:](https://elg1e.github.io/elg1e-Vintage/)
 
-* The live website was deployed using Heroku. The site can be found [here:](https://vintage-fullstack.herokuapp.com/)
+ To create the website, I have used the coding platform Gitpod. Deployment and source control was done via GitHub and Heroku. To recreate this repository locally you must have the following installed:
 
-Follow these steps for deployment using Heroku:
+ * [python3](https://www.python.org/)To run the application
+ * [PIP](https://pypi.org/project/pip/)To install the requirements.
+ * [Git](https://www.atlassian.com/git/tutorials/install-git)For the cloning and version control.
+ * [GitPod](https://www.gitpod.io/)For the workspace used to develop the project (Another IDE could be used).
+
+ The next steps for cloning this project from [github](https://github.com/) are:
+
+ 1. Go to GitHub then, navigate to the main page of the repository.
+ 2. Above the list of files, click the button named Code.
+ 3. To clone the repository click the copy button next to the HTTPS.
+ 4. Open your terminal window, inside type git clone and paste the HTTPS.
+ 5. Press enter to create your local clone.
+
+ To finalise, you will need to create an env.py with your own environment variables, Then, install all the requirements from the [requirements.txt](https://github.com/elg1e/elg1e-Vintage/blob/master/requirements.txt).
+
+Follow these steps for remote deployment using Heroku:
 
 * Firstly, log into Heroku and created a new application.
 * Then, follow the steps Heroku give you on the website to connect Heroku to the web app. These steps are to install the Heroku CLI by logging in.
