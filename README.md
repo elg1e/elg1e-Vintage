@@ -15,7 +15,7 @@ Users simply search for artifacts they wish to learn about or purchase. If they 
     - [**Navigation**](#navigation)
     - [**Homepage**](#homepage)
     - [**Shopping Cart**](#shopping-cart)
-    - [**Bidding/Buying Out**](#bidding-buying-out)
+    - [**Bidding Buying Out**](#bidding-buying-out)
     - [**Future features**](#future-features)
 3. [**Technologies Used**](#technologies-used)
 4. [**Testing**](#testing)
@@ -71,7 +71,7 @@ The sign in or register links are to sign up to the website which will allow you
 
  The Shopping Cart is the same as most ecommerce websites. The user can click an item they wish to purchase and this item will enter their cart. When checking out the users items will be in there ready for purchase.
 
-## Bidding/Buying Out
+## Bidding Buying Out
 
  The Bidding and Buying out system is designed to allow users to out bid eachother on items they wish to purchase. The items will also have a buy out price, so if they wish to buy the items instantaniously to avoid missing
 out they can do so with this function.
