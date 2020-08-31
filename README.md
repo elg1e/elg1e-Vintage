@@ -6,12 +6,15 @@ Vintage is an ecommerce web application which allows users to shop, search, bid 
 
 Users simply search for artifacts they wish to learn about or purchase. If they see something they desire or want to keep and eye on they can create an account and either place a bid using the original auction-style system or buy an item instantly with the 'Buy It Now' button.
 
-# Table of Contents
+## Table of Contents
 
-- [UX](#UX)
-    * [User Stories](##User%Stories)
-    * [Wireframes/Mockups](##Wireframes/Mockups)
-- [Features](#Features)
+- [**UX**](#ux)
+    * [**User Stories**](##user-stories)
+    * [**Wireframes Mockups**](##wireframes-mockups)
+- [Features](#features)
+    * [**Navigation**](##navigation)
+    * [**Homepage**](##homepage)
+    * [**Shopping Cart**](##shopping-cart)
 
 # UX
 
@@ -27,7 +30,7 @@ This project is aimed at all generations fascinated by the ancient world. The we
 * As a user, I would like to be able to press a button to help me if I've lost my password. I would then like a email confirmation to give me my new password setup. 
 * As a user, I would like to find what I'm looking for fast, by simply pressing one button to get to a list of items I wish to purchase.
 
-## Wireframes/Mockups
+## Wireframes Mockups
 
  Below there are images of my initial ideas/mock-ups of the website:
 
