@@ -8,13 +8,13 @@ Users simply search for artifacts they wish to learn about or purchase. If they 
 
 ## Table of Contents
 
-- [**UX**](#ux)
-    * [**User Stories**](##user-stories)
-    * [**Wireframes Mockups**](##wireframes-mockups)
-- [Features](#features)
-    * [**Navigation**](##navigation)
-    * [**Homepage**](##homepage)
-    * [**Shopping Cart**](##shopping-cart)
+1. [**UX**](#ux)
+    - [**User Stories**](##UserStories)
+    - [**Wireframes Mockups**](##wireframesmockups)
+2. [Features](#features)
+    - [**Navigation**](##Navigation)
+    - [**Homepage**](##Homepage)
+    - [**Shopping Cart**](##Shoppingcart)
 
 # UX
 
