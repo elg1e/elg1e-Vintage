@@ -6,6 +6,13 @@ Vintage is an ecommerce web application which allows users to shop, search, bid 
 
 Users simply search for artifacts they wish to learn about or purchase. If they see something they desire or want to keep and eye on they can create an account and either place a bid using the original auction-style system or buy an item instantly with the 'Buy It Now' button.
 
+# Table of Contents
+
+- [UX](#UX)
+    * [User Stories](##User%Stories)
+    * [Wireframes/Mockups](##Wireframes/Mockups)
+- [Features](#Features)
+
 # UX
 
 This project is aimed at all generations fascinated by the ancient world. The website is clean and simple allowing users to discover artifacts, learn about their history and purchase the items using the easy to follow bidding system or buy it now option. The simplistic navigation bar allows for a seamless transition between pages and the muted colour scheme creates an appealing platform for the artifacts to shine.
@@ -160,6 +167,11 @@ from the users view, stopping any further bids and making the last highest bidde
 4. Press checkout.
 5. Follow the instructions for payment.
 6. Press the Submit Payment button.
+
+## Known Issues
+
+During development, I encountered an issue with the password reset feature. Pressing the Display Unlock Captcha button allowed me to send the emails through for a short period of time. However, after a certain period the Display Unlock Captcha seemed to reset and I would have to reauthorise the website.
+After speaking with technical support, they highlighted the known issue with Django SMTP with Gmail. 
 
 # Responsive Design
 
