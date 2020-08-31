@@ -11,7 +11,7 @@ Users simply search for artifacts they wish to learn about or purchase. If they 
 1. [**UX**](#ux)
     - [**User Stories**](#user-stories)
     - [**Wireframes Mockups**](#wireframes-mockups)
-2. [Features](#features)
+2. [**Features**](#features)
     - [**Navigation**](#navigation)
     - [**Homepage**](#homepage)
     - [**Shopping Cart**](#shopping-cart)
@@ -19,8 +19,17 @@ Users simply search for artifacts they wish to learn about or purchase. If they 
     - [**Future features**](#future-features)
 3. [**Technologies Used**](#technologies-used)
 4. [**Testing**](#testing)
-    -[**Homepage Testing**](#homepage-testing)
-    -[**Artifact Page**](#artifact-page)
+    - [**Homepage Testing**](#homepage-testing)
+    - [**Artifact Page**](#artifact-page)
+    - [**Known Issues**](#known-issues)
+5. [**Responsive Design**](#responsive-design)
+    - [**Resolutions**](#resolutions)
+    - [**Browsers**](#browsers)
+6. [**Validation**](#validation)
+7. [**Deployment**](#deployment)
+8. [**Credits**](#credits)
+    - [**Content**](#content)
+    - [**Media**](#media)
 
 # UX
 
@@ -180,7 +189,7 @@ from the users view, stopping any further bids and making the last highest bidde
 ## Known Issues
 
 During development, I encountered an issue with the password reset feature. Pressing the Display Unlock Captcha button allowed me to send the emails through for a short period of time. However, after a certain period the Display Unlock Captcha seemed to reset and I would have to reauthorise the website.
-After speaking with technical support, they highlighted the known issue with Django SMTP with Gmail. 
+After speaking with tutor support, they highlighted the known issue with Django SMTP with Gmail.
 
 # Responsive Design
 
@@ -190,7 +199,9 @@ After speaking with technical support, they highlighted the known issue with Dja
 
  ![Responsive Vintage](https://github.com/elg1e/elg1e-Vintage/blob/master/static/images/vintage-responsive.png)
 
-## Mobiles
+## Resolutions
+
+The website has been tested with these resolutions:
 
 * Moto G4
 * Galaxy S5
@@ -204,6 +215,8 @@ After speaking with technical support, they highlighted the known issue with Dja
 * Surface Duo
 * Galaxy Fold
 * Desktops/XL Desktops
+
+## Browsers
 
  The website has been tested with these browsers:
 
